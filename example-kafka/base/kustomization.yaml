@@ -6,4 +6,5 @@ namespace: example-kafka
 resources:
   - example-kafka.yaml
   - example-service-registry.yaml
+  - example-service-registry-route.yaml
   - topics

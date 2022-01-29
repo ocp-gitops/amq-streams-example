@@ -3,4 +3,14 @@ kind: Kustomization
 
 resources:
   - ../../base
-  
+
+patchesJson6902:
+  - target:
+      group: route.openshift.io
+      version: v1
+      kind: Route
+      name: example-service-registry-route
+    patch: |-
+      - op: replace
+        path: /spec/host
+        value: example-service-registry.example-kafka.apps.ocp.snimmo.com
