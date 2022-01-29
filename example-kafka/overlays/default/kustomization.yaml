@@ -3,3 +3,14 @@ kind: Kustomization
 
 resources:
   - ../../base
+
+patchesJson6902:
+  - target:
+      group: registry.apicur.io
+      version: v1
+      kind: ApicurioRegistry
+      name: example-service-registry
+    patch: |-
+      - op: replace
+        path: /spec/deployment/host
+        value: example-service-registry.example-kafka.apps.ocp.snimmo.com
