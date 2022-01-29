@@ -8,6 +8,7 @@ spec:
     kafkasql:
       bootstrapServers: 'example-kafka-kafka-bootstrap:9092'
   deployment:
+    # HACK
     host: insecure-dont-use
 
 # https://www.apicur.io/registry/docs/apicurio-registry-operator/1.0.0/assembly-operator-configuration.html#spec

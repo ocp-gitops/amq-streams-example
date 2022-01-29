@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
   - ../../base
+  - topics
 
 patchesJson6902:
   - target:
