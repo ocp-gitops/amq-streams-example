@@ -13,4 +13,4 @@ patchesJson6902:
     patch: |-
       - op: replace
         path: /spec/host
-        value: example-service-registry.example-kafka.apps.ocp.snimmo.com
+        value: example-service-registry.apps.ocp.snimmo.com
